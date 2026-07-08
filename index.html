@@ -182,6 +182,10 @@
 
   /* ---------- WORK ---------- */
   .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .card-feat { grid-column: 1 / -1; padding: 32px; }
+  .card-feat h3 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+  .card-feat p { font-size: 1rem; max-width: 72ch; }
+  .card-feat .thesis-link { color: var(--cool); text-decoration: underline; text-underline-offset: 3px; }
   .card {
     position: relative;
     display: block;
@@ -305,7 +309,7 @@
       </div>
       <div class="about-body reveal">
         <p><strong>Rakshit Makan</strong> is a Generative AI Specialist based in Toronto with 6+ years across AI, NLP, and Deep Learning. He works on large language models, retrieval-augmented generation, and transformer fine-tuning — the full path from research and experimentation to production systems.</p>
-        <p>His work spans document clustering with BERT, modular LLM training and inference pipelines, and agentic AI tooling. He currently builds at <strong>Behavox</strong>, and cares about clean ML pipelines, well-scoped models, and tooling that removes friction.</p>
+        <p>His master's thesis at <strong>Dalhousie University</strong> built a human-in-the-loop system for classifying multi-page administrative documents, and his work since spans document clustering with BERT, modular LLM training and inference pipelines, and agentic AI tooling. He currently builds at <strong>Behavox</strong>, and cares about clean ML pipelines, well-scoped models, and tooling that removes friction.</p>
       </div>
     </div>
   </section>
@@ -317,6 +321,12 @@
         <h2>Things I've built</h2>
       </div>
       <div class="work-grid">
+        <a class="card card-feat reveal" style="--accent: var(--warm)" href="https://github.com/rakmakan/HITL-Document-Classification" target="_blank" rel="noopener">
+          <div class="card-top"><span class="tag">Master's Thesis · Dalhousie 2022</span><span class="stars">🎓</span></div>
+          <h3>Human-in-the-Loop Document Classification</h3>
+          <p>The reference implementation of my master's thesis. A human-in-the-loop system for classifying multi-page scanned administrative documents: a two-step Sentence-BERT classifier (Page Importance → Main Page) where a domain expert validates and annotates, and the model retrains incrementally — no ML engineer in the loop. Built with Flask, Redis, and scikit-learn.</p>
+          <div class="arrow">View on GitHub →</div>
+        </a>
         <a class="card reveal" style="--accent: var(--warm)" href="https://github.com/rakmakan/Clustering-with-BERT" target="_blank" rel="noopener">
           <div class="card-top"><span class="tag">NLP</span><span class="stars">★ 17</span></div>
           <h3>Document Clustering with BERT</h3>
