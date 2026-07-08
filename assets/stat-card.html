@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Claude Job Hunter — Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0F1320; --surface: #171C2C; --line: #242C42;
+    --text: #ECEEF5; --muted: #8992A8; --warm: #F4C15A; --cool: #7C93FF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 60px 56px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card { width: 100%; max-width: 1120px; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 12px;
+    font-family: "Space Mono", monospace;
+    font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 40px;
+  }
+  .eyebrow .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--warm); box-shadow: 0 0 0 5px rgba(244,193,90,0.15); }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+  }
+  .stat { padding: 0 28px; position: relative; }
+  .stat + .stat::before {
+    content: ""; position: absolute; left: 0; top: 12%; height: 76%;
+    width: 1px; background: var(--line);
+  }
+  .num {
+    font-family: "Space Grotesk", sans-serif; font-weight: 700;
+    font-size: 108px; line-height: 0.9; letter-spacing: -0.04em;
+    color: var(--text);
+  }
+  .num.warm { color: var(--warm); }
+  .num.cool { color: var(--cool); }
+  .label {
+    font-family: "Space Mono", monospace;
+    font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted); margin-top: 18px; line-height: 1.4;
+  }
+
+  .caption {
+    margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline; gap: 20px;
+    flex-wrap: wrap;
+  }
+  .caption .banks { font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: 22px; }
+  .caption .banks span { color: var(--muted); font-weight: 500; }
+  .caption .src { font-family: "Space Mono", monospace; font-size: 14px; color: var(--muted); letter-spacing: 0.08em; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow"><span class="dot"></span>One night with Claude Job Hunter</div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num warm">60</div>
+        <div class="label">applications<br>submitted</div>
+      </div>
+      <div class="stat">
+        <div class="num">3</div>
+        <div class="label">banks<br>targeted</div>
+      </div>
+      <div class="stat">
+        <div class="num">1</div>
+        <div class="label">evening,<br>hands-off</div>
+      </div>
+      <div class="stat">
+        <div class="num cool">7</div>
+        <div class="label">recruiter calls<br>(2 by morning)</div>
+      </div>
+    </div>
+    <div class="caption">
+      <div class="banks">BMO <span>·</span> Scotiabank <span>·</span> CIBC</div>
+      <div class="src">github.com/rakmakan/claude-job-hunter</div>
+    </div>
+  </div>
+</body>
+</html>
