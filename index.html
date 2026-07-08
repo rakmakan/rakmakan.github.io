@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rakshit Makan — Generative AI & NLP Engineer</title>
+<meta name="description" content="Rakshit Makan is a Generative AI Specialist in Toronto with 6+ years in AI, NLP, and Deep Learning — building LLMs, RAG systems, and applied machine learning. See his GitHub and LinkedIn." />
+<link rel="canonical" href="https://rakmakan.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Rakshit Makan — Generative AI & NLP Engineer" />
+<meta property="og:description" content="Generative AI Specialist in Toronto. 6+ years in LLMs, NLP, and Deep Learning." />
+<meta property="og:url" content="https://rakmakan.github.io/" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F1320'/%3E%3Ccircle cx='34' cy='40' r='7' fill='%23F4C15A'/%3E%3Ccircle cx='62' cy='34' r='6' fill='%237C93FF'/%3E%3Ccircle cx='58' cy='64' r='7' fill='%237C93FF'/%3E%3Ccircle cx='38' cy='66' r='5' fill='%23F4C15A'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Person schema: tells Google this page = this person = these profiles -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rakshit Makan",
+  "jobTitle": "Generative AI Specialist",
+  "description": "Generative AI Specialist with 6+ years in AI, NLP, and Deep Learning.",
+  "url": "https://rakmakan.github.io/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressCountry": "Canada" },
+  "knowsAbout": ["Generative AI", "Large Language Models", "Natural Language Processing", "Deep Learning", "Retrieval-Augmented Generation", "Machine Learning"],
+  "sameAs": [
+    "https://github.com/rakmakan",
+    "https://www.linkedin.com/in/rakshit-makan"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #0F1320;
+    --surface: #171C2C;
+    --line: #242C42;
+    --text: #ECEEF5;
+    --muted: #8992A8;
+    --warm: #F4C15A;
+    --cool: #7C93FF;
+    --maxw: 1080px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  .mono {
+    font-family: "Space Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  #space {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .hero::after {
+    /* vignette so text stays legible over the canvas */
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: radial-gradient(120% 90% at 30% 45%, rgba(15,19,32,0.35) 0%, rgba(15,19,32,0.82) 62%, var(--bg) 100%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 2; width: 100%; }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+  .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warm); box-shadow: 0 0 0 4px rgba(244,193,90,0.15); }
+
+  h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: clamp(3.2rem, 11vw, 7.4rem);
+    line-height: 0.94;
+    letter-spacing: -0.03em;
+  }
+  h1 .last { color: transparent; -webkit-text-stroke: 1.4px var(--text); }
+
+  .role {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.05rem, 2.6vw, 1.5rem);
+    margin-top: 28px;
+    max-width: 30ch;
+    color: var(--text);
+  }
+  .role b { color: var(--warm); font-weight: 600; }
+  .role i { color: var(--cool); font-style: normal; font-weight: 600; }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-primary { background: var(--warm); color: #1a1408; }
+  .btn-primary:hover { transform: translateY(-2px); }
+  .btn-ghost { border: 1px solid var(--line); color: var(--text); }
+  .btn-ghost:hover { border-color: var(--cool); transform: translateY(-2px); }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 30px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section.block { padding: 110px 0; border-top: 1px solid var(--line); }
+  .head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 52px;
+    flex-wrap: wrap;
+  }
+  .head h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    letter-spacing: -0.02em;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; }
+  .about-lead {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+  .about-body p { color: var(--muted); margin-bottom: 18px; max-width: 60ch; }
+  .about-body strong { color: var(--text); font-weight: 600; }
+
+  /* ---------- WORK ---------- */
+  .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .card {
+    position: relative;
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 26px 24px;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    overflow: hidden;
+  }
+  .card::before {
+    content: "";
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--accent, var(--cool));
+    opacity: 0.9;
+  }
+  .card:hover { transform: translateY(-4px); border-color: var(--accent, var(--cool)); background: #1b2135; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .tag {
+    font-family: "Space Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent, var(--cool));
+    border: 1px solid var(--line);
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+  .stars { font-family: "Space Mono", monospace; font-size: 0.8rem; color: var(--warm); }
+  .card h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .card p { color: var(--muted); font-size: 0.94rem; }
+  .card .arrow { margin-top: 18px; font-size: 0.85rem; color: var(--text); opacity: 0.7; }
+
+  /* ---------- FOCUS ---------- */
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    color: var(--text);
+  }
+  .chip span { color: var(--muted); font-family: "Space Mono", monospace; font-size: 0.7rem; margin-left: 8px; }
+
+  /* ---------- FOOTER ---------- */
+  footer { padding: 90px 0 60px; border-top: 1px solid var(--line); }
+  .foot-cta {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 34px;
+    max-width: 20ch;
+  }
+  .foot-cta a { color: var(--warm); text-decoration: none; border-bottom: 2px solid transparent; }
+  .foot-cta a:hover { border-color: var(--warm); }
+  .foot-links { display: flex; gap: 26px; flex-wrap: wrap; margin-bottom: 40px; }
+  .foot-links a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--muted); font-weight: 500; transition: color 0.18s; }
+  .foot-links a:hover { color: var(--text); }
+  .foot-links svg { width: 18px; height: 18px; }
+  .foot-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 0.85rem; }
+
+  /* ---------- REVEAL ---------- */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 760px) {
+    .about-grid { grid-template-columns: 1fr; gap: 26px; }
+    .work-grid { grid-template-columns: 1fr; }
+    section.block { padding: 80px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .scroll-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="wrap">
+      <span class="eyebrow"><span class="dot"></span><span class="mono">Generative AI · NLP · Deep Learning</span></span>
+      <h1>Rakshit<br><span class="last">Makan</span></h1>
+      <p class="role">I build applied <b>Generative AI</b> and <i>NLP</i> systems — from fine-tuning transformers to shipping LLM products. 6+ years, based in Toronto.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/rakmakan" target="_blank" rel="noopener me">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.6 18.4.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/rakshit-makan" target="_blank" rel="noopener me">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint mono">scroll ↓</div>
+</header>
+
+<main>
+  <section class="block" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <span class="mono">01 — About</span>
+        <p class="about-lead" style="margin-top:18px;">Turning research-grade NLP into systems people actually use.</p>
+      </div>
+      <div class="about-body reveal">
+        <p><strong>Rakshit Makan</strong> is a Generative AI Specialist based in Toronto with 6+ years across AI, NLP, and Deep Learning. He works on large language models, retrieval-augmented generation, and transformer fine-tuning — the full path from research and experimentation to production systems.</p>
+        <p>His work spans document clustering with BERT, modular LLM training and inference pipelines, and agentic AI tooling. He currently builds at <strong>Behavox</strong>, and cares about clean ML pipelines, well-scoped models, and tooling that removes friction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="mono">02 — Selected work</span>
+        <h2>Things I've built</h2>
+      </div>
+      <div class="work-grid">
+        <a class="card reveal" style="--accent: var(--warm)" href="https://github.com/rakmakan/Clustering-with-BERT" target="_blank" rel="noopener">
+          <div class="card-top"><span class="tag">NLP</span><span class="stars">★ 17</span></div>
+          <h3>Document Clustering with BERT</h3>
+          <p>Unsupervised topic clustering using BERT & SBERT embeddings, PCA dimensionality reduction, and K-Means. SBERT gave the cleanest topic separation.</p>
+          <div class="arrow">View on GitHub →</div>
+        </a>
+        <a class="card reveal" style="--accent: var(--cool)" href="https://github.com/rakmakan/LLM_Projects" target="_blank" rel="noopener">
+          <div class="card-top"><span class="tag">LLM</span></div>
+          <h3>LLM Training & Inference</h3>
+          <p>A modular Python application for training and running language models across both Hugging Face and ONNX formats.</p>
+          <div class="arrow">View on GitHub →</div>
+        </a>
+        <a class="card reveal" style="--accent: var(--cool)" href="https://github.com/rakmakan/claude-job-hunter" target="_blank" rel="noopener">
+          <div class="card-top"><span class="tag">Agents</span><span class="stars">★ 1</span></div>
+          <h3>Claude Job Hunter</h3>
+          <p>End-to-end job-application automation as a Claude Code plugin — discover, filter, tailor resumes, and auto-apply.</p>
+          <div class="arrow">View on GitHub →</div>
+        </a>
+        <a class="card reveal" style="--accent: var(--warm)" href="https://github.com/rakmakan/AI_marketing_automation" target="_blank" rel="noopener">
+          <div class="card-top"><span class="tag">GenAI</span></div>
+          <h3>AI Marketing Automation</h3>
+          <p>LLM-driven content generation and campaign workflows, automating the repetitive parts of marketing.</p>
+          <div class="arrow">View on GitHub →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="focus">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="mono">03 — Focus</span>
+        <h2>What I work with</h2>
+      </div>
+      <div class="chips reveal">
+        <span class="chip">Large Language Models <span>LLM</span></span>
+        <span class="chip">Natural Language Processing <span>NLP</span></span>
+        <span class="chip">Retrieval-Augmented Generation <span>RAG</span></span>
+        <span class="chip">Transformer Fine-Tuning <span>PyTorch</span></span>
+        <span class="chip">Deep Learning <span>ML</span></span>
+        <span class="chip">Hugging Face <span>HF</span></span>
+        <span class="chip">Python <span>PY</span></span>
+        <span class="chip">Model Pipelines <span>MLOps</span></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-cta reveal">Building something in AI? <a href="https://www.linkedin.com/in/rakshit-makan" target="_blank" rel="noopener me">Let's talk →</a></p>
+    <div class="foot-links reveal">
+      <a href="https://github.com/rakmakan" target="_blank" rel="noopener me">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.6 18.4.5 12 .5z"/></svg>
+        github.com/rakmakan
+      </a>
+      <a href="https://www.linkedin.com/in/rakshit-makan" target="_blank" rel="noopener me">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7z"/></svg>
+        in/rakshit-makan
+      </a>
+    </div>
+    <div class="foot-meta">
+      <span class="mono">Rakshit Makan · Toronto, Canada</span>
+      <span class="mono">Generative AI / NLP Engineer</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---- Embedding-space canvas: points drift toward cluster centroids ----
+  var canvas = document.getElementById("space");
+  var ctx = canvas.getContext("2d");
+  var W, H, dpr, points = [], centroids = [];
+  var WARM = "#F4C15A", COOL = "#7C93FF";
+
+  function size() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth; H = canvas.clientHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function build() {
+    // 3 loose clusters, each a centroid the points gravitate to
+    centroids = [
+      { x: W * 0.30, y: H * 0.42, c: WARM },
+      { x: W * 0.64, y: H * 0.34, c: COOL },
+      { x: W * 0.56, y: H * 0.70, c: COOL }
+    ];
+    var n = W < 640 ? 46 : 82;
+    points = [];
+    for (var i = 0; i < n; i++) {
+      var g = centroids[i % centroids.length];
+      points.push({
+        cx: g, c: g.c,
+        x: Math.random() * W, y: Math.random() * H,
+        vx: 0, vy: 0,
+        r: 1.4 + Math.random() * 2.2,
+        jx: (Math.random() - 0.5) * 0.6,
+        jy: (Math.random() - 0.5) * 0.6,
+        t: Math.random() * 100
+      });
+    }
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, W, H);
+
+    // links within a cluster (drawn faint, behind points)
+    for (var i = 0; i < points.length; i++) {
+      for (var j = i + 1; j < points.length; j++) {
+        var a = points[i], b = points[j];
+        if (a.cx !== b.cx) continue;
+        var dx = a.x - b.x, dy = a.y - b.y;
+        var d2 = dx * dx + dy * dy;
+        if (d2 < 8200) {
+          ctx.strokeStyle = a.c;
+          ctx.globalAlpha = (1 - d2 / 8200) * 0.14;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      }
+    }
+    ctx.globalAlpha = 1;
+
+    for (var k = 0; k < points.length; k++) {
+      var p = points[k];
+      // gentle pull to centroid + slow drift
+      p.t += 0.008;
+      var tx = p.cx.x + Math.cos(p.t + k) * 60 + p.jx * 40;
+      var ty = p.cx.y + Math.sin(p.t * 1.3 + k) * 60 + p.jy * 40;
+      p.vx += (tx - p.x) * 0.0016;
+      p.vy += (ty - p.y) * 0.0016;
+      p.vx *= 0.94; p.vy *= 0.94;
+      p.x += p.vx; p.y += p.vy;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.c;
+      ctx.globalAlpha = 0.85;
+      ctx.fill();
+      // soft glow
+      ctx.globalAlpha = 0.12;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r * 3.2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+    raf = requestAnimationFrame(step);
+  }
+
+  var raf;
+  function start() { size(); build(); if (!reduce) step(); else drawStatic(); }
+  function drawStatic() {
+    // one static frame for reduced-motion users
+    ctx.clearRect(0, 0, W, H);
+    for (var k = 0; k < points.length; k++) {
+      var p = points[k];
+      p.x = p.cx.x + (Math.random() - 0.5) * 120;
+      p.y = p.cx.y + (Math.random() - 0.5) * 120;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.c; ctx.globalAlpha = 0.8; ctx.fill(); ctx.globalAlpha = 1;
+    }
+  }
+
+  window.addEventListener("resize", function () {
+    if (raf) cancelAnimationFrame(raf);
+    start();
+  });
+  start();
+
+  // ---- Scroll reveal ----
+  if (!reduce && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
